@@ -26,7 +26,7 @@
         if ($new_posts->have_posts()) : while ($new_posts->have_posts()) : $new_posts->the_post(); 
       ?>
         <div class="mb-5">
-          <?php echo get_template_part('template-parts/post-item'); ?>
+          <?php get_template_part('template-parts/post-item'); ?>
         </div>
       <?php endwhile; endif; wp_reset_postdata(); ?>
       <div class="inline-flex items-center relative hover:text-indigo-500 dark:hover:text-indigo-400">
