@@ -180,8 +180,8 @@ function get_max_price($post_id) {
 
 
 // Insert the post into the database
-add_action( 'created_services', 'add_new_post_service_city', $service_id );
-add_action( 'created_city', 'add_new_post_city_service', $city_id );
+// add_action( 'created_services', 'add_new_post_service_city', $service_id );
+// add_action( 'created_city', 'add_new_post_city_service', $city_id );
 
 function add_new_post_service_city($service_id) {
   $service_name = get_term( $service_id )->name;
