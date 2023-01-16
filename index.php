@@ -21,6 +21,7 @@
         'taxonomy' => 'category', 
         'parent' => 0, 
         'hide_empty' => false,
+        'exclude'  => 1,
       ));
       foreach ( array_slice($all_cats, 0, 9) as $all_cat ): ?>
         <div class="px-1 mb-2">
