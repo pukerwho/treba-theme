@@ -16,6 +16,18 @@
       </span>
       <span><?php _e("Нові дописи", "treba-wp"); ?></span>
     </h2>
+    <div class="flex flex-wrap items-center mb-4 -mx-1">
+      <?php $all_cats = get_terms( array( 
+        'taxonomy' => 'category', 
+        'parent' => 0, 
+        'hide_empty' => false,
+      ));
+      foreach ( array_slice($all_cats, 0, 9) as $all_cat ): ?>
+        <div class="px-1 mb-2">
+          <a href="<?php echo get_term_link($all_cat); ?>" class="inline-block bg-indigo-100 dark:bg-zinc-700 hover:bg-indigo-200 hover:dark:bg-zinc-800 rounded px-4 py-2"><?php echo $all_cat->name ?></a>
+        </div>
+      <?php endforeach; ?>
+    </div>
     <div class="mb-16">
       <?php 
         $new_posts = new WP_Query( array( 
