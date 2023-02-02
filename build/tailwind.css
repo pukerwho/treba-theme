@@ -1335,10 +1335,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1815,8 +1811,9 @@ main,  footer {
 }
 
 .content ol {
+  margin-left: 1.25rem;
   margin-bottom: 2rem;
-  list-style-type: none;
+  list-style-type: decimal;
   font-size: 1.125rem;
   line-height: 1.75rem;
   line-height: 1.5;

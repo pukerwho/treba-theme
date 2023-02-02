@@ -95,7 +95,7 @@ main, footer {
   @apply text-lg leading-[1.5] list-disc text-gray-800 dark:text-gray-200 ml-4 mb-8;
 }
 .content ol {
-  @apply text-lg leading-[1.5] list-none text-gray-800 dark:text-gray-200 mb-8;
+  @apply text-lg leading-[1.5] list-decimal text-gray-800 dark:text-gray-200 ml-5 mb-8;
 }
 .content ul li {
   @apply list-disc;
